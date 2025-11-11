@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: servicio1-encryption
+
+jwe:
+  public-key-path: ${JWE_PUBLIC_KEY_PATH:keys/public-key.pem}
+  service2:
+    url: ${SERVICE2_URL:http://localhost:8082}
+    decrypt-endpoint: /api/decrypt
+
+logging:
+  level:
+    com.demo.jwe: DEBUG
+    org.springframework.web: INFO

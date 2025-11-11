@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: servicio2-decryption
+
+jwe:
+  private-key-path: ${JWE_PRIVATE_KEY_PATH:keys/private-key.pem}
+
+logging:
+  level:
+    com.demo.jwe: DEBUG
+    org.springframework.web: INFO

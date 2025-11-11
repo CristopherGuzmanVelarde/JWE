@@ -1,0 +1,18 @@
+{
+  "groups": [
+    {
+      "name": "jwe",
+      "type": "com.demo.jwe.config.JweProperties",
+      "sourceType": "com.demo.jwe.config.JweProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwe.private-key-path",
+      "type": "java.lang.String",
+      "description": "Ruta al archivo de clave privada RSA Puede ser sobrescrita con la variable de entorno: JWE_PRIVATE_KEY_PATH",
+      "sourceType": "com.demo.jwe.config.JweProperties"
+    }
+  ],
+  "hints": []
+}
